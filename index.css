@@ -1,1 +1,289 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+}
 
+header {
+    background-color: #9CCB57;
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    padding: 10px;
+    background-color: rgb(0, 70, 0);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #9CCB57;
+    min-height: 100vh;
+}
+
+section#inicio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../imagens/imglink.jpg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+section#inicio img {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+@font-face {
+    font-family: "Sofia Sans";
+    src: url("../fontes/SofiaSansCondensed-VariableFont_wght.ttf") format("truetype");
+}
+
+section#inicio h1 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 100px;    
+    font-family: Georgia;
+}
+
+section#sobre {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#sobre h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(0, 70, 0);
+    border-radius: 30px;
+    color: white;
+}
+
+section#conteúdo {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+section#conteúdo h1 {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(0, 70, 0);
+    border-radius: 30px;
+    color: white;
+    font-size: 40px;
+}
+
+section#conteúdo h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(0, 70, 0);
+    border-radius: 30px;
+    color: white;
+}
+
+#controles {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#controles a {
+    padding: 10px;
+    border-radius: 100%;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(0, 70, 0);
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Arial Narrow Bold', sans-serif
+}
+
+.organela h2 {
+    width: 400px !important;
+    background-color: #aaff2b !important;
+    color: black !important;
+}
+
+.organela div {
+    display: flex;
+    gap: 10px;
+}
+
+#diferentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+iframe {
+    width: 75%;
+    height: 450px;
+}
+
+#diferentes div {
+    width: 50%;
+}
+
+#diferentes[div] + #diferentes[div] {
+    border-left: 3px solid green;
+    padding-left: 10px;
+}
+
+#diferentes h3 {
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #aaff2b;
+    color: black;
+}
+
+.fotos {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.fotos div {
+    width: 33%;
+}
+
+.fotos p {
+    text-align: center;
+}
+
+.fotos {
+
+}
+
+#qrcode {
+    margin-top: 30px;
+    display:flex;
+    align-items: center;
+    
+}
+
+#mobile{
+    display: none; @media (max-width: 600px) {
+    section#inicio h1 {
+        font-size: 60px;
+    }
+
+    section#inicio {
+        background-size: 500px;
+    }
+
+    section#inicio img {
+        width: 75px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    section#sobre {
+        width: 95%;
+    }
+
+    section#conteúdo {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .organela div {
+        flex-direction: column;
+    }
+
+    .organela h2 {
+        width: 90% !important;
+    }
+
+    .organela img {
+        width: 100%;
+    }
+
+    #diferentes {
+        flex-direction: column;
+    }
+
+    #diferentes div {
+        width: 100%;
+    }
+
+    .fotos {
+        flex-direction: column;
+    }
+
+    .fotos div {
+        width: 100%;
+    }
+
+    embed {
+        width: 100%;
+    }
+
+    #qrcode {
+        flex-direction: column;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #mobile > a {
+        margin-left: 10px;
+    }
+
+    #menu-mobile {
+        margin-top: 20px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #menu-mobile > a {
+        width: 90%;
+    }
+
+    #menu-mobile.active {
+        display: flex;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+ }
+}
+------------------------------------
+
+    
